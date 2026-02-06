@@ -12,10 +12,19 @@ public class Rectangle {
 
   // main constructor
   public Rectangle(double w, double h, double oX, double oY) {
-    width = w;
+    this.width = w;
     height = h;
     originX = oX;
     originY = oY;
+  }
+  // second constructor: 
+  public Rectangle(double width, double height) {
+    this(width, height, 0, 0);
+  }
+
+  // third constructor: 
+  public Rectangle() {
+    this(1,1,0,0);
   }
 
   // method: move the rectangle
